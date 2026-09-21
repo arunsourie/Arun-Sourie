@@ -1,5 +1,3 @@
-
-
 Index · HTML
 <!DOCTYPE html>
 <html lang="en">
@@ -59,7 +57,7 @@ Index · HTML
       min-height: 100vh;
     }
  
-    /* ── SIDEBAR ─────────────────────────────── */
+    /* ── SIDEBAR ── */
     .sidebar {
       position: fixed;
       top: 0; left: 0;
@@ -74,7 +72,6 @@ Index · HTML
       overflow-y: auto;
     }
  
-    /* ★ Change "Arun Sourie" in HTML to your name */
     .sidebar-logo {
       font-family: var(--font-d);
       font-size: 19px;
@@ -87,7 +84,6 @@ Index · HTML
     }
     .sidebar-logo:hover { color: var(--accent); }
  
-    /* ★ Change to your degree / institution */
     .sidebar-sub {
       font-size: 10.5px;
       color: var(--text-3);
@@ -97,7 +93,6 @@ Index · HTML
       line-height: 1.5;
     }
  
-    /* Status pill */
     .sidebar-status {
       display: inline-flex;
       align-items: center;
@@ -155,7 +150,7 @@ Index · HTML
     .sidebar-socials a:hover { color: var(--accent); }
     .sidebar-socials svg { width: 16px; height: 16px; fill: currentColor; display: block; }
  
-    /* ── MAIN CONTENT ─────────────────────────── */
+    /* ── MAIN CONTENT ──*/
     .main-content {
       margin-left: var(--sidebar-w);
       flex: 1;
@@ -341,7 +336,6 @@ Index · HTML
  
     /* =============================================
        EXPERIENCE
-       ★ Duplicate .exp-item to add a role
     ============================================= */
     .exp-list { display: flex; flex-direction: column; }
     .exp-item {
@@ -365,7 +359,6 @@ Index · HTML
  
     /* =============================================
        PUBLICATIONS  (used when section is uncommented)
-       ★ Uncomment <section id="publications"> when ready
     ============================================= */
     .pub-list { display: flex; flex-direction: column; }
     .pub-item {
@@ -395,7 +388,6 @@ Index · HTML
  
     /* =============================================
        BLOG / WRITING
-       ★ Duplicate .blog-item + .blog-body pair to add a post
     ============================================= */
     .blog-grid { display: flex; flex-direction: column; }
  
@@ -610,14 +602,13 @@ Index · HTML
   <div class="page-shell">
  
     <!-- ================================================
-         SIDEBAR  (desktop only, >768px)
+         SIDEBAR  (Desktop Only, >768px)
     ================================================ -->
     <aside class="sidebar">
       <a href="#" class="sidebar-logo">Arun Sourie</a>
-      <!-- ★ Change to your degree / institution -->
       <span class="sidebar-sub">ECE · IIITDM Kurnool</span>
  
-      <!-- ★ Change status text -->
+      <!-- ★ Status Text -->
       <div class="sidebar-status">
         <span class="status-dot"></span>
         Building something new!
@@ -678,7 +669,6 @@ Index · HTML
       <!-- ══════════════════════════════════════════
            PROJECTS
            ★ Duplicate a .project-card to add more
-           ★ Fill data-detail with your full description
       ══════════════════════════════════════════ -->
       <section id="projects">
         <div class="section-inner">
@@ -736,7 +726,7 @@ Index · HTML
               <div class="project-detail"></div>
             </div>
  
-            <!-- ★ Add more projects by copying the block above -->
+            <!-- ★ Add more projects here -->
  
           </div>
         </div>
@@ -755,20 +745,19 @@ Index · HTML
             <!-- EXPERIENCE 1 -->
             <div class="exp-item reveal">
               <div class="exp-period">
-                <!-- ★ Change dates e.g. "Jun 2025 — Aug 2025" -->
-                Jun 2025 — Present
+                Jun 2026 — Aug 2026
               </div>
               <div class="exp-body">
-                <!-- ★ Change role title -->
+                <!-- ★ Role Title -->
                 <div class="exp-role">Embedded Software Intern</div>
-                <!-- ★ Change org name and location -->
+                <!-- ★ Name and Location of the Company -->
                 <div class="exp-org">SatSure Analytics / KaleidEO · Bangalore, India</div>
-                <!-- ★ 2–3 sentence description of your work -->
+                <!-- ★ Work Description -->
                 <div class="exp-desc">
                   Working within the hardware-software co-design team at KaleidEO (a SatSure company). Focused on optimizing memory-bus throughput, deploying edge-AI models on AMD Zynq SoC platforms
                 </div>
                 <div class="exp-tags">
-                  <!-- ★ Change tags to match skills used -->
+                  <!-- ★ Tags -->
                   <span class="exp-tag">FPGA-based SoC</span>
                   <span class="exp-tag">Xilinx Vivado & Vitis</span>
                 </div>
@@ -843,7 +832,7 @@ Index · HTML
           <p class="section-label">Writing</p>
           <div class="blog-grid">
  
-            <!-- POST 1 — header row (clickable) -->
+            <!-- POST 1 — Header Row -->
             <div class="blog-item reveal" data-target="blog-1">
               <div>
                 <div class="blog-meta-top">
@@ -852,19 +841,18 @@ Index · HTML
                   <!-- ★ Estimate: ~200 words/min -->
                   <span class="blog-read-time">3 min read</span>
                 </div>
-                <!-- ★ Change title and excerpt -->
+                <!-- ★ Blog Title-->
                 <div class="blog-title">Observations and Questions After Installing Ubuntu</div>
-                <div class="blog-excerpt">My honest take after switching from Windows to Linux — what surprised me, what frustrated me, and what I'd tell someone considering the jump.</div>
+                <div class="blog-excerpt">My honest take after partially switching from Windows to Linux (I am running Dual-Boot).</div>
               </div>
               <div class="blog-right">
-                <span class="blog-date">Apr 2025</span>
+                <span class="blog-date">Apr 2026</span>
                 <span class="blog-chevron">&#8964;</span>
               </div>
             </div>
-            <!-- POST 1 — full content (hidden until clicked) -->
+            <!-- POST 1 - Full Content -->
             <div class="blog-body" id="blog-1">
               <div class="blog-body-inner">
-                <!-- ★ Change the h3 to match your title -->
                 <h3>Observations and Questions After Installing Ubuntu</h3>
                 <p>
                   I recently installed Ubuntu 24.04, and the experience has been interesting so far.
@@ -903,7 +891,41 @@ Index · HTML
                 </div>
               </div>
             </div>
- 
+
+            <!-- POST 2 — Header Row -->
+            <div class="blog-item reveal" data-target="blog-2">
+              <div>
+                <div class="blog-meta-top">
+                  <!-- ★ Change category tag -->
+                  <span class="blog-category">Linux</span>
+                  <!-- ★ Estimate: ~200 words/min -->
+                  <span class="blog-read-time">3 min read</span>
+                </div>
+                <!-- ★ Blog Title-->
+                <div class="blog-title">My Internship Experience at KaleidEO Space Systems</div>
+                <div class="blog-excerpt">My real experience of my 3-month internship at KaleidEO Space Systems (A SatSure Company).</div>
+              </div>
+              <div class="blog-right">
+                <span class="blog-date">Aug 2026</span>
+                <span class="blog-chevron">&#8964;</span>
+              </div>
+            </div>
+            <!-- POST 1 - Full Content -->
+            <div class="blog-body" id="blog-2">
+              <div class="blog-body-inner">
+                <h3>My Internship Experience at KaleidEO Space Systems</h3>
+                <p>
+                  Work in progress...
+                </p>
+                <div class="blog-post-footer">
+                  <span class="blog-post-footer-date">Published April 2025</span>
+                  <div class="project-tags">
+                    <span class="project-tag">Internship</span>
+                    <span class="project-tag">Experience</span>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- ★ Add more posts here — copy the .blog-item + .blog-body blocks above -->
             <!-- Remember to change data-target="blog-2" and id="blog-2" -->
  
@@ -1048,6 +1070,3 @@ Index · HTML
  
 </body>
 </html>
- 
-
-
